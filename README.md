@@ -14,6 +14,26 @@ In this project we attempt to create a facial censorship system which hides the 
 ### Dataset
 The dataset we used was a custom dataset which consisted of images of people. These images were mainly harvested from the web. We also used some pictures of our families and relatives. Because of this, the dataset will NOT be shared in this repository or anywhere else.
 
+
+## Project structure
+
+### Train
+**Contains Jupyter Notebooks for model training**
+
+src/train/
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   ./resnet.ipynb - ResNet - 50 Fine tuning model
+ 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   ./vggface_custom_model.ipynb - VGGFace - ResNet - 50 Fine tuning model
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   ./vggface_feture_extraction.ipynb - VGGFace feture extraction and then classify via Feed Forward Neural Net
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   ./visual_transformers.ipynb - Visual Transformers model training
+
+ 
+ Set the needed parameters inside of the Jupyter Notebooks, set your enviroment and the models will run out of the box.
+
+
 ## Instructions
 
 ### Create the dataset
@@ -37,20 +57,3 @@ In order to perform predictions with an already trained model, enter the `src/pr
 ```console
 python3 perform_predictions.py
 ```
-### Directories Description
-
-#### Train
-**Contains Jupyter Notebooks for model training**
-
-src/train/
-
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   ./resnet.ipynb - ResNet - 50 Fine tuning model
- 
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   ./vggface_custom_model.ipynb - VGGFace - ResNet - 50 Fine tuning model
-
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   ./vggface_feture_extraction.ipynb - VGGFace feture extraction and then classify via Feed Forward Neural Net
-
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   ./visual_transformers.ipynb - Visual Transformers model training
-
- 
- Set the needed parameters inside of the Jupyter Notebooks, set your enviroment and the models will run out of the box.
