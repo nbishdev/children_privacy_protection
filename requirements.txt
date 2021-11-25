@@ -8,6 +8,5 @@ opencv-python
 pandas
 pillow
 scikit-learn
-scipy
 vit-keras
 git+https://github.com/nbishdev/tf.keras-vggface.git
